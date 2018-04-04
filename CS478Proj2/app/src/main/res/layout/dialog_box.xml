@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/youtube"
+        android:layout_width="211dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
+        android:text="Youtube URL"
+        app:layout_constraintBottom_toTopOf="@+id/songWikiBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artist" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="209dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="51dp"
+        android:text="Title"
+        app:layout_constraintBottom_toTopOf="@+id/artist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/songWikiBox"
+        android:layout_width="211dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="254dp"
+        android:text="Song Wiki URL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/youtube" />
+
+    <EditText
+        android:id="@+id/artist"
+        android:layout_width="213dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="18dp"
+        android:text="Artist"
+        app:layout_constraintBottom_toTopOf="@+id/youtube"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="16dp"
+        android:text="Cancel"
+        app:layout_constraintEnd_toStartOf="@+id/doneButton"
+        app:layout_constraintTop_toBottomOf="@+id/artistWikiBox" />
+
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="138dp"
+        android:layout_marginStart="121dp"
+        android:text="Done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/artistWikiBox" />
+
+    <EditText
+        android:id="@+id/artistWikiBox"
+        android:layout_width="207dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="13dp"
+        android:text="Artist Wiki URL"
+        app:layout_constraintBottom_toTopOf="@+id/doneButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/songWikiBox" />
+</android.support.constraint.ConstraintLayout>
